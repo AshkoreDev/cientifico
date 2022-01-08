@@ -32,6 +32,10 @@ module.exports = {
       {
         from: './src/css/style.css',
         to: ''
+      },
+      {
+        from:'./src/images',
+        to:'./images'
       }
     ])
   ]

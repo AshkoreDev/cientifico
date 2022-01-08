@@ -5,31 +5,31 @@ const character = async function() {
   const id = getHash();
   const oneCharacter = await getData(id);
   const view = `
-    <section class="character-inner">
-      <article class="character-card">
+    <section class="character">
+      <article class="character__info">
         <figure>
-          <img src="${oneCharacter.image}" alt="${oneCharacter.name} Profile Picture"/>
+          <img src="${oneCharacter.image}" alt="${oneCharacter.name} Profile Picture" class="character__info--img" width="280" height="280"/>
         </figure>
-        <h2>${oneCharacter.name}</h2>
       </article>
-      <article class="character-card">
-        <h3>Episodes:
-          <span>${oneCharacter.episode.length}</span>
+      <article class="character__info">
+      <h2 class="character__info--title">${oneCharacter.name}</h2>
+        <h3 class="character__info--item">Episodes:
+          <span class="character__info--res">${oneCharacter.episode.length}</span>
         </h3>
-        <h3>Status:
-          <span>${oneCharacter.status}</span>
+        <h3 class="character__info--item">Status:
+          <span class="character__info--res">${oneCharacter.status}</span>
         </h3>
-        <h3>Species:
-          <span>${oneCharacter.species}</span>
+        <h3 class="character__info--item">Species:
+          <span class="character__info--res">${oneCharacter.species}</span>
         </h3>
-        <h3>Gender:
-          <span>${oneCharacter.gender}</span>
+        <h3 class="character__info--item">Gender:
+          <span class="character__info--res">${oneCharacter.gender}</span>
         </h3>
-        <h3>Origin:
-          <span>${oneCharacter.origin.name}</span>
+        <h3 class="character__info--item">Origin:
+          <span class="character__info--res">${oneCharacter.origin.name}</span>
         </h3>
-        <h3>Last location:
-          <span>${oneCharacter.location.name}</span>
+        <h3 class="character__info--item">Last location:
+          <span class="character__info--res">${oneCharacter.location.name}</span>
         </h3>
       </article>
     </section>

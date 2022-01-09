@@ -12,7 +12,7 @@ const character = async function() {
         </figure>
       </article>
       <article class="character__info">
-      <h2 class="character__info--title">${oneCharacter.name}</h2>
+        <h2 class="character__info--title">${oneCharacter.name}</h2>
         <h3 class="character__info--item">Episodes:
           <span class="character__info--res">${oneCharacter.episode.length}</span>
         </h3>

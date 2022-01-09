@@ -54,7 +54,8 @@ figure {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #04a8c2;
+  background-color: var(--card--color);
+  border-bottom: 1px solid var(--title-color);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
@@ -70,6 +71,7 @@ figure {
 
 /* MAIN */
 main {
+  min-height: 71.8vh;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -146,6 +148,32 @@ main {
   font-weight: 500;
 }
 
+/* FOOTER */
+.footer__container {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  background-color: var(--title-color);
+}
+
+.footer__info {
+  width: 320px;
+  margin: 10px auto;
+  letter-spacing: 1.5px;
+}
+
+.footer__info--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__info--item {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
   .navbar {
@@ -165,6 +193,10 @@ main {
   .character__info {
     width: 50%;
   }
+
+  .footer__info {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -181,5 +213,9 @@ main {
 
   .character__card:hover {
     transform: scale(1.1);
+  }
+
+  .footer__info--item:hover {
+    border-color: #fff;
   }
 }

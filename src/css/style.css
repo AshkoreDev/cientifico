@@ -71,7 +71,8 @@ figure {
 
 /* MAIN */
 main {
-  min-height: 71.8vh;
+  /* min-height: 71.4vh; */
+  min-height: calc(100vh - 179px);
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -101,6 +102,7 @@ main {
 .character__card--img {
   width: 280px;
   border-radius: 20px;
+  opacity: 0.8;
 }
 
 .character__card--title {
@@ -213,6 +215,10 @@ main {
 
   .character__card:hover {
     transform: scale(1.1);
+  }
+
+  .character__card--img:hover {
+    opacity: 1;
   }
 
   .footer__info--item:hover {

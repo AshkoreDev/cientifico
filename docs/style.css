@@ -150,6 +150,14 @@ main {
   font-weight: 500;
 }
 
+/* Error 404 */
+.error404__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--title-color);
+}
+
 /* FOOTER */
 .footer__container {
   padding: 10px 0;
